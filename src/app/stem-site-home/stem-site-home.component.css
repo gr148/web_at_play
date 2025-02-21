@@ -1,0 +1,63 @@
+.toggle-link {
+    color: rgb(33, 33, 34);
+    /* text-decoration: underline; */
+    cursor: pointer;
+  }
+  
+  .follower-image {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+  }
+  
+  .follower-image.active {
+    display: block;
+  }
+    /*
+     * Custom translucent site header
+     */
+    
+    .site-header {
+      background-color: rgba(0, 0, 0, .85);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+    .site-header a {
+      color: #8e8e8e;
+      transition: color .15s ease-in-out;
+    }
+    .site-header a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    /*
+     * Extra utilities
+     */
+    
+    .flex-equal > * {
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .flex-md-equal > * {
+        flex: 1;
+      }
+    }
+    
+    .bg{
+    
+      background-image: url('/assets/images/spacex_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+      min-height: 95vh;
+      width: 95 vw;
+  
+      /* background-attachment: fixed; */
+      /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)); */
+      
+    }
